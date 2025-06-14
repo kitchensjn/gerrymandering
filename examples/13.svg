@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="360pt" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2024-05-29T19:28:29.382177</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 360 360 
+L 360 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="LineCollection_1">
+    <path d="M 197.785714 49.8 
+L 197.785714 63 
+L 197.785714 76.2 
+L 197.785714 89.4 
+L 197.785714 102.6 
+L 211.071429 102.6 
+L 211.071429 115.8 
+L 224.357143 115.8 
+L 224.357143 129 
+L 224.357143 142.2 
+L 211.071429 142.2 
+L 211.071429 155.4 
+L 197.785714 155.4 
+L 197.785714 168.6 
+L 197.785714 181.8 
+L 197.785714 195 
+L 197.785714 208.2 
+L 184.5 208.2 
+L 171.214286 208.2 
+L 157.928571 208.2 
+L 144.642857 208.2 
+L 131.357143 208.2 
+L 131.357143 221.4 
+L 131.357143 234.6 
+L 131.357143 247.8 
+L 144.642857 247.8 
+L 157.928571 247.8 
+L 157.928571 261 
+L 157.928571 274.2 
+L 171.214286 274.2 
+L 184.5 274.2 
+L 184.5 287.4 
+L 184.5 300.6 
+L 171.214286 300.6 
+L 157.928571 300.6 
+L 157.928571 313.8 
+" clip-path="url(#pf9ee9441a7)" style="fill: none; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 51.642857 313.8 
+L 317.357143 313.8 
+L 317.357143 49.8 
+L 51.642857 49.8 
+L 51.642857 313.8 
+" clip-path="url(#pf9ee9441a7)" style="fill: none; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf9ee9441a7">
+   <rect x="45" y="43.2" width="279" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

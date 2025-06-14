@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="360pt" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2024-05-29T19:28:50.755112</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 360 360 
+L 360 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="LineCollection_1">
+    <path d="M 317.357143 115.8 
+L 304.071429 115.8 
+L 290.785714 115.8 
+L 277.5 115.8 
+L 277.5 129 
+L 277.5 142.2 
+L 264.214286 142.2 
+L 250.928571 142.2 
+L 250.928571 129 
+L 250.928571 115.8 
+L 237.642857 115.8 
+L 237.642857 102.6 
+L 224.357143 102.6 
+L 211.071429 102.6 
+L 211.071429 115.8 
+L 211.071429 129 
+L 197.785714 129 
+L 197.785714 142.2 
+L 197.785714 155.4 
+L 184.5 155.4 
+L 171.214286 155.4 
+L 171.214286 168.6 
+L 157.928571 168.6 
+L 144.642857 168.6 
+L 144.642857 181.8 
+L 144.642857 195 
+L 157.928571 195 
+L 157.928571 208.2 
+L 144.642857 208.2 
+L 144.642857 221.4 
+L 144.642857 234.6 
+L 144.642857 247.8 
+L 131.357143 247.8 
+L 131.357143 261 
+L 118.071429 261 
+L 104.785714 261 
+L 91.5 261 
+L 78.214286 261 
+L 78.214286 274.2 
+L 78.214286 287.4 
+L 64.928571 287.4 
+L 64.928571 300.6 
+L 64.928571 313.8 
+" clip-path="url(#p73209f2acd)" style="fill: none; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 51.642857 313.8 
+L 317.357143 313.8 
+L 317.357143 49.8 
+L 51.642857 49.8 
+L 51.642857 313.8 
+" clip-path="url(#p73209f2acd)" style="fill: none; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p73209f2acd">
+   <rect x="45" y="43.2" width="279" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

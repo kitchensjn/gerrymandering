@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+    <meta charset="UTF-8">
+    <title>Gerrymandering</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src='https://d3js.org/d3.v7.min.js'></script>
+</header>
+
+<body>
+    <div id="districts"></div>
+
+    <script>
+        var width = 500;
+        var height = 500;
+
+        // Create the SVG
+        const svg = d3.select("#districts").append("svg")
+            .attr("viewBox", "0 0 267.21 265.5")
+            .attr("width", 400);
+        
+        var outline = svg.append("path")
+            .attr("d", "M51.6,313.8h265.7v-264H51.6V313.8")
+            .attr("fill", "white")
+            .attr("stroke-width", 2)
+            .attr("stroke", "black")
+            .attr("transform", "translate(-50.89 -49.05)");
+
+        // Add the line
+        var path = svg.append("path")
+            .attr("fill", "none")
+            .attr("stroke-width", 2)
+            .attr("stroke", "black")
+            .attr("transform", "translate(-50.89 -49.05)");
+
+        const district_boundaries = [
+            "M197.8,313.8v-13.2v-13.2h13.3v-13.2V261v-13.2v-13.2v-13.2v-13.2h13.3V195v-13.2v-13.2v-13.2h13.3v-13.2h13.3V129h-13.3h-13.3v13.2h-13.3v13.2h-13.3h-13.3v-13.2h-13.3h-13.3V129v-13.2h-13.3h-13.3h-13.3v-13.2h-13.3V89.4V76.2h13.3V63h13.3V49.8",
+            "M250.93,49.8V63H277.5V76.2h13.29v39.6H211.07V89.4H171.21V76.2H131.36V89.4h13.28v26.4h13.29V129h13.28V115.8h26.58V129h13.28v13.2h13.29v26.4h39.85V155.4H277.5V142.2h13.29V195h13.28v13.2H277.5v13.2H264.21v13.2H237.64V221.4h13.29V195H237.64v13.2H211.07v39.6H184.5V234.6H171.21V221.4H157.93V195H118.07V181.8H104.79V261H91.5V247.8H64.93V261H51.64",
+            "M237.6,49.8V63v13.2v13.2h13.3v13.2h13.3v13.2V129h-13.3v-13.2h-13.3h-13.3V129h-13.3h-13.3v13.2h13.3h13.3h13.3h13.3h13.3v13.2h-13.3v13.2v13.2h-13.3h-13.3V195v13.2h-13.3h-13.3h-13.3v13.2v13.2v13.2h-13.3V261h-13.3h-13.3v13.2h-13.3h-13.3h-13.3V261h13.3h13.3v-13.2v-13.2v-13.2h-13.3v13.2h-13.3H91.5H78.2H64.9v13.2H51.6",
+            "M317.4,234.6h-13.3h-13.3h-13.3h-13.3h-13.3v-13.2v-13.2h-13.3h-13.3h-13.3h-13.3V195h-13.3h-13.3h-13.3h-13.3v-13.2h-13.3v-13.2v-13.2v-13.2V129h-13.3v-13.2v-13.2V89.4h-13.3H91.5H78.2v13.2v13.2h13.3V129H78.2H64.9H51.6",
+            "M317.4,181.8h-13.3v-13.2h-13.3h-13.3h-13.3h-13.3v-13.2v-13.2h-13.3h-13.3v13.2v13.2h-13.3h-13.3h-13.3h-13.3v13.2h-13.3V195v13.2v13.2h-13.3v-13.2V195h-13.3h-13.3h-13.3H91.5H78.2v13.2v13.2H64.9H51.6"
+        ]
+        var n = 0;
+
+        function repeat() {
+            if (n==district_boundaries.length) { n = 0;}
+            path
+                .attr("d", district_boundaries[n])
+            // Get the length of the path, which we will use for the intial offset to "hide"
+            // the graph
+            n = n + 1;
+            var length = path.node().getTotalLength();
+            // Animate the path by setting the initial offset and dasharray and then transition the offset to 0
+            path
+                .attr("stroke-dasharray", length + " " + length)
+                .attr("stroke-dashoffset", length)
+                .transition()
+                .ease(d3.easeLinear)
+                .attr("stroke-dashoffset", 0)
+                .duration(2000)
+                .on("end", () => setTimeout(repeat, 1000)); // this will repeat the animation after waiting 1 second
+            
+        };
+        
+        // Animate the graph for the first time
+        repeat();
+        
+    </script>
+</body>
+
+</html>
